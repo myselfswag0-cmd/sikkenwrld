@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sikken.World</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('https://media.discordapp.net/attachments/1486604534959706212/1487524856537813032/IMG_2216.gif?ex=69c974fa&is=69c8237a&hm=686237257c71a181be41b4731ebead3d7de503bd9042c9c62326d5426212a31f&=') center/cover no-repeat;
+        filter: blur(8px) brightness(0.4);
+        z-index: -1;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .avatars {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        gap: 30px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid rgba(255,255,255,0.2);
+        transition: 0.3s;
+    }
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .avatar:hover {
+        transform: scale(1.1);
+        border-color: white;
+    }
+
+    .music-player {
+        margin-top: 60px;
+        background: rgba(255,255,255,0.05);
+        padding: 15px 20px;
+        border-radius: 15px;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        backdrop-filter: blur(10px);
+    }
+
+    .music-player img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    audio {
+        outline: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<h1>Sikken</h1>
+
+<div class="avatars">
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1472097349437362217/1487534491701608609/IMG_9631.jpg?ex=69c97df3&is=69c82c73&hm=c071a982c51ac964e315866e91ea9d8eb0515f81ab1b2f0a8afb74da177c2f34&=&format=webp"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1476264307573395487/1487529263694483538/IMG_9630.jpg?ex=69c97915&is=69c82795&hm=3647b040e49a95697ae4a52c25b0080409c8c4c7ae799ff3509ac43eac083ecc&=&format=webp"></div>
+    <div class="avatar"><img src="https://cdn.discordapp.com/attachments/1476264307573395487/1487536213241102486/download_3.jpg?ex=69c97f8e&is=69c82e0e&hm=ccc5b5f9f3a0c2b815d0ae6024c6144bb38f8dfa6692e248b7b343dec899dd2f&"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1472097349437362217/1487536352227754014/dabc3f59-bb82-4850-a606-2806aa5f517b.png?ex=69c97faf&is=69c82e2f&hm=7aaaa5a9755340a0884f7ecd8200534da15b550c7ac52bc0df1fb35164e9e2c3&=&format=webp&quality=lossless"></div>
+    <div class="avatar"><img src="https://cdn.discordapp.com/attachments/1472097349437362217/1487537769285947603/3a200f3a7fcb384cae973a2f63c78274.jpg?ex=69c98101&is=69c82f81&hm=ac9eb23ed141093018b0d2299bdae633634ca326c6d2b846a756ae634a9250be&"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1486567957860581478/1487525862227054622/325024f219655cc3ae89a24ab27e326d.jpg?ex=69c975ea&is=69c8246a&hm=1fe1a74fc9a4173f4833d5471181ebf97e60d2a6d3a1a8f65bafcd1f82a60a94&=&format=webp&width=968&height=968"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1486567957860581478/1487532417693651105/download.jpg?ex=69c97c05&is=69c82a85&hm=c1b093cdff44faa3eb53fedffc619e6949c646c6e61846b51f2cdce25053686b&=&format=webp"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1476264307573395487/1487537070061781002/disord_gg_403.jpg?ex=69c9805a&is=69c82eda&hm=30292d18c013cb9e6db277ee2c2e297b460166e2222ef9d71e28c188d36514a6&=&format=webp"></div>
+    <div class="avatar"><img src="https://media.discordapp.net/attachments/1486567957860581478/1487537420726567003/49f95a46fc892286e02d212e470ee005.jpg?ex=69c980ae&is=69c82f2e&hm=451132811ec4e13079f4183c6f4a6fe7c098a3d1feb6382cee503e46447e6f27&=&format=webp"></div>
+</div>
+
+<div class="music-player">
+    <img src="https://media.discordapp.net/attachments/1476264307573395487/1487527379328045126/image.png?ex=69c97754&is=69c825d4&hm=af48797a4a4c10530b32dd56f4610a9b4ac37358da7fe7b89fadbc0900ffdc74&=&format=webp&quality=lossless" alt="cover">
+    <div>
+        <div>Sikken.World</div>
+        <div style="font-size:12px; opacity:0.7;">Jai</div>
+    </div>
+    <audio controls>
+        <source src="https://cdn.discordapp.com/attachments/1476264307573395487/1487526388779978795/Anak_Ng_Diyos_Freestyle_-_Cuervo_Messiah.mp3?ex=69c97667&is=69c824e7&hm=16ae9f7c2b652f970c1eaefaeb59021fde6e99f93c6854aa65ff431854b8bb33&" type="audio/mpeg">
+    </audio>
+</div>
+
+</body>
+</html>
